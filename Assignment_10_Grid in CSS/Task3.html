@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: grid;
+            grid-auto-rows: 50px;
+            grid-template-columns: 100px 100px; 
+        }
+
+        .item {
+            border: 1px solid #ccc;
+        }
+
+        .container2 {
+            grid-template-rows: 100px 100px;
+            display: grid;
+            grid-auto-columns: 50px;
+        }
+        
+        .item1 {
+            border: 1px solid #ccc;
+        }
+        .exam {
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Grid auto rows and grid auto columns</h1>
+        <p>In CSS Grid, the grid-auto-rows and grid-auto-columns properties are used to define the size of implicitly created rows and columns in a grid when the number of rows or columns is not explicitly specified in the grid definition. These properties
+             apply to the rows and columns that are created automatically to accommodate additional content.</p>
+        <p>Here are examples demonstrating the use of grid-auto-rows and grid-auto-columns:</p>
+        <div class="exam">
+            <div>
+            <h2>Example 1: grid-auto-rows</h2>
+            
+            <div class="container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+              </div>
+              <p>In this example, we've explicitly defined two columns, but we haven't specified the number of rows. The grid-auto-rows: 50px; property 
+                ensures that any additional rows created implicitly will have a height of 50 pixels.</p>
+            </div>
+            <div>
+            <h2>Example 2: grid-auto-columns</h2>
+            <div class="container2">
+                <div class="item1">1</div>
+                <div class="item1">2</div>
+                <div class="item1">3</div>
+                <div class="item1">4</div>
+                <div class="item1">5</div>
+              </div>
+
+              <p>In this example, we've explicitly defined two columns, but we haven't specified the number of rows. The grid-auto-rows: 50px; property 
+                ensures that any additional rows created implicitly will have a height of 50 pixels.</p>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>

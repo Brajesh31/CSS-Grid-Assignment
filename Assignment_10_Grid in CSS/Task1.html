@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Assignment</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+            gap: 12px;
+            padding: 15px;
+        }
+        .container div {
+            border: 1px solid gray;
+            /* height: 250px; */
+            background-color: #dadada;
+        }
+        .item1 {
+            grid-column: span 2;
+        }
+        .item3{
+            grid-row: span 2;
+        }
+        .item5 {
+            grid-column: span 2;
+        }
+        .item6 {
+            grid-row: span 2;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1"><img src="media/pexels-pixabay-85674.jpg" alt=""></div>
+        <div class="item2"><img src="media/pexels-pixabay-460775.jpg" alt=""></div>
+        <div class="item3"><img src="media/pexels-pixabay-80474.jpg" alt=""></div>
+        <div class="item4"><img src="media/pexels-pixabay-459198.jpg" alt=""></div>
+        <div class="item5"><img src="media/pexels-pixabay-458976.jpg" alt=""></div>
+        <div class="item6"><img src="media/pexels-pixabay-45853.jpg" alt=""></div>
+        <div class="item7"><img src="media/pexels-jan-kopřiva-3280908.jpg" alt=""></div>
+        <div class="item8"><img src="media/pexels-ilo-frey-2317904.jpg" alt=""></div>
+        <div class="item9"><img src="media/pexels-george-desipris-792381.jpg" alt=""></div>
+        <div class="item10"><img src="media/pexels-daniyal-ghanavati-110812.jpg" alt=""></div>
+        <div class="item11"><img src="media/pexels-creapattern-596792.jpg" alt=""></div>
+        <div class="item12"><img src="media/pexels-belle-co-847393.jpg" alt=""></div>
+    </div>
+</body>
+</html>
